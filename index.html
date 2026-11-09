@@ -10,57 +10,76 @@
 <meta property="og:description" content="Вашият сватбен ден, разказан като филм.">
 <meta property="og:image" content="https://chuzhdenetsatsnima.com/img/wedding-party-1900.webp">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#000000">
+<meta name="theme-color" content="#FFF6F0">
+<link rel="preload" href="fonts/great-vibes-normal-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <a class="skip" href="#main"><span lang="bg">Към съдържанието</span><span lang="en">Skip to content</span></a>
 
-<header class="frame on-black">
-  <div class="bar-top">
-    <h1 class="title">
-      <span lang="bg">Чужденецът снима</span><span lang="en">The Foreigner Films</span>
-      <small><span lang="bg">Сватбени филми от Марчин Китовски</span><span lang="en">Wedding films by Marcin Kitowski, in Bulgaria</span></small>
-    </h1>
-    <div class="cc" role="group" aria-label="Език / Language">
-      <span class="cc-badge" aria-hidden="true">CC</span>
-      <button type="button" data-set-lang="bg" aria-pressed="true">БГ</button>
-      <button type="button" data-set-lang="en" aria-pressed="false">EN</button>
-    </div>
-  </div>
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a class="logo" href="#top"><span lang="bg">Чужденецът снима</span><span lang="en">The Foreigner Films</span></a>
 
-  <figure class="shot">
-    <img src="img/wedding-party-1900.webp"
-         srcset="img/wedding-party-1000.webp 1000w, img/wedding-party-1900.webp 1908w"
-         sizes="100vw" width="1908" height="874" fetchpriority="high"
-         alt="Булката, младоженецът и шаферите се смеят на поляна пред есенна планина / The bride, groom and wedding party laughing on a lawn in front of autumn hills">
-  </figure>
+    <nav class="menu" id="menu" aria-label="Меню / Menu">
+      <a href="#prices"><span lang="bg">Цени</span><span lang="en">Prices</span></a>
+      <a href="https://www.youtube.com/@%D0%A7%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B5%D1%86%D1%8A%D1%82%D1%81%D0%BD%D0%B8%D0%BC%D0%B0" target="_blank" rel="noopener"><span lang="bg">Портфолио</span><span lang="en">Portfolio</span><svg class="ext" viewBox="0 0 12 12" aria-hidden="true"><path d="M4 2h6v6M10 2 3 9" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="sr" lang="bg">(YouTube, нов прозорец)</span><span class="sr" lang="en">(YouTube, new tab)</span></a>
+      <a href="#about"><span lang="bg">За мен</span><span lang="en">About me</span></a>
+      <a class="menu-cta" href="#contact"><span lang="bg">Контакт</span><span lang="en">Contact</span></a>
+    </nav>
 
-  <div class="bar-bottom">
-    <p class="sub" id="subtitle"><span lang="bg">Вашият сватбен ден, разказан като филм.</span><span lang="en">Your wedding day, told as a film.</span></p>
-    <div class="actions">
-      <a class="btn btn-solid" href="#contact"><span lang="bg">Проверете свободна дата</span><span lang="en">Check your date</span></a>
-      <a class="btn btn-line" href="https://www.youtube.com/@%D0%A7%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B5%D1%86%D1%8A%D1%82%D1%81%D0%BD%D0%B8%D0%BC%D0%B0" target="_blank" rel="noopener"><span lang="bg">Гледайте филмите в YouTube</span><span lang="en">Watch the films on YouTube</span></a>
+    <div class="flags" role="group" aria-label="Език / Language">
+      <button type="button" data-set-lang="bg" aria-pressed="true" aria-label="Български" title="Български">
+        <svg viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><path fill="#fff" d="M0 0h5v1H0z"/><path fill="#00966E" d="M0 1h5v1H0z"/><path fill="#D62612" d="M0 2h5v1H0z"/></svg>
+      </button>
+      <button type="button" data-set-lang="en" aria-pressed="false" aria-label="English" title="English">
+        <svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><clipPath id="uk-s"><path d="M0 0v30h60V0z"/></clipPath><clipPath id="uk-t"><path d="M30 15h30v15zv15H0zH0V0zV0h30z"/></clipPath><g clip-path="url(#uk-s)"><path d="M0 0v30h60V0z" fill="#012169"/><path d="M0 0l60 30m0-30L0 30" stroke="#fff" stroke-width="6"/><path d="M0 0l60 30m0-30L0 30" clip-path="url(#uk-t)" stroke="#C8102E" stroke-width="4"/><path d="M30 0v30M0 15h60" stroke="#fff" stroke-width="10"/><path d="M30 0v30M0 15h60" stroke="#C8102E" stroke-width="6"/></g></svg>
+      </button>
     </div>
+
+    <button class="burger" type="button" aria-controls="menu" aria-expanded="false">
+      <span class="burger-lines" aria-hidden="true"></span>
+      <span class="sr" lang="bg">Меню</span><span class="sr" lang="en">Menu</span>
+    </button>
   </div>
 </header>
 
 <main id="main">
 
-  <section class="block" aria-labelledby="pkg-h">
+  <section class="hero">
+    <div class="wrap hero-text">
+      <h1 class="hero-title"><span lang="bg">Чужденецът снима</span><span lang="en">The Foreigner Films</span></h1>
+      <p class="hero-lead"><span lang="bg">Сватбени филми от Марчин Китовски. Вашият ден, разказан като филм.</span><span lang="en">Wedding films by Marcin Kitowski. Your day, told as a film.</span></p>
+      <div class="actions">
+        <a class="btn btn-rose" href="#contact"><span lang="bg">Проверете свободна дата</span><span lang="en">Check your date</span></a>
+        <a class="btn btn-ghost" href="#prices"><span lang="bg">Вижте цената</span><span lang="en">See the price</span></a>
+      </div>
+    </div>
+    <div class="wrap">
+      <figure class="arch-wide">
+        <img src="img/wedding-party-1900.webp"
+             srcset="img/wedding-party-1000.webp 1000w, img/wedding-party-1900.webp 1908w"
+             sizes="(max-width:1180px) 100vw, 1100px" width="1908" height="874" fetchpriority="high"
+             alt="Булката, младоженецът и шаферите се смеят на поляна пред есенна планина / The bride, groom and wedding party laughing on a lawn in front of autumn hills">
+      </figure>
+    </div>
+  </section>
+
+  <section class="block prices" id="prices" aria-labelledby="pkg-h">
     <div class="wrap">
       <h2 id="pkg-h"><span lang="bg">Един пакет, една цена</span><span lang="en">One package, one price</span></h2>
-      <div class="package">
+      <div class="panel">
         <div class="price">
           <p class="price-figure">920&nbsp;€</p>
-          <p><strong><span lang="bg">До 10 часа заснемане</span><span lang="en">Up to 10 hours of filming</span></strong><br>
+          <p class="price-note"><strong><span lang="bg">До 10 часа заснемане</span><span lang="en">Up to 10 hours of filming</span></strong><br>
             <span lang="bg">от подготовката до последния ритуал</span><span lang="en">from the preparations to the last ritual</span></p>
-          <p><span lang="bg">Всеки следващ започнат час: <strong>75 €</strong></span><span lang="en">Each extra hour started: <strong>75 €</strong></span></p>
+          <p class="price-note"><span lang="bg">Всеки следващ започнат час: <strong>75 €</strong></span><span lang="en">Each extra hour started: <strong>75 €</strong></span></p>
         </div>
         <div class="lists">
           <div>
             <h3><span lang="bg">Как снимам</span><span lang="en">How I film</span></h3>
-            <ul class="ticks">
+            <ul class="rings">
               <li><span lang="bg">Две камери за повече гледни точки</span><span lang="en">Two cameras for more angles</span></li>
               <li><span lang="bg">Видео в 4K резолюция</span><span lang="en">4K video</span></li>
               <li><span lang="bg">Дрон за въздушни кадри на локацията</span><span lang="en">Drone for aerial shots of the venue</span></li>
@@ -69,37 +88,33 @@
               <li><span lang="bg">Професионално цветово коригиране на целия филм</span><span lang="en">Professional color grading of the whole film</span></li>
             </ul>
           </div>
-          <div class="get">
+          <div>
             <h3><span lang="bg">Какво получавате</span><span lang="en">What you get</span></h3>
-            <ul class="ticks">
+            <ul class="rings get">
               <li><span lang="bg">Сватбен филм до 60 минути с всички важни моменти от деня</span><span lang="en">A wedding film of up to 60 minutes with every important moment of the day</span></li>
               <li><span lang="bg">Трейлър от 3 до 5 минути с най-емоционалните кадри, готов за споделяне с приятели и в социалните мрежи</span><span lang="en">A 3 to 5 minute trailer with the most emotional shots, ready to share with friends and on social media</span></li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section class="block timeline-wrap" aria-labelledby="tl-h">
-    <div class="wrap">
-      <h2 id="tl-h"><span lang="bg">Кога получавате филма</span><span lang="en">When you get your film</span></h2>
+      <h3 class="tl-h"><span lang="bg">Кога получавате филма</span><span lang="en">When you get your film</span></h3>
       <div class="track">
         <div class="track-line" aria-hidden="true"></div>
         <ol class="stops">
           <li class="stop s0">
             <span class="day"><span lang="bg">Ден 0</span><span lang="en">Day 0</span></span>
-            <h3><span lang="bg">Сватбата</span><span lang="en">The wedding</span></h3>
+            <strong><span lang="bg">Сватбата</span><span lang="en">The wedding</span></strong>
             <p><span lang="bg">До 10 часа заснемане, включени в цената.</span><span lang="en">Up to 10 hours of filming, included.</span></p>
           </li>
           <li class="stop s14">
             <span class="day"><span lang="bg">Ден 14</span><span lang="en">Day 14</span></span>
-            <h3><span lang="bg">Експресно</span><span lang="en">Express</span></h3>
-            <p><span lang="bg">Готов филм до 2 седмици. <strong>+300 €</strong></span><span lang="en">Finished film within 2 weeks. <strong>+300 €</strong></span></p>
+            <strong><span lang="bg">Експресно</span><span lang="en">Express</span></strong>
+            <p><span lang="bg">Готов филм до 2 седмици, +300 €.</span><span lang="en">Finished film within 2 weeks, +300 €.</span></p>
           </li>
           <li class="stop s90">
             <span class="day"><span lang="bg">Ден 90</span><span lang="en">Day 90</span></span>
-            <h3><span lang="bg">Стандартно</span><span lang="en">Standard</span></h3>
+            <strong><span lang="bg">Стандартно</span><span lang="en">Standard</span></strong>
             <p><span lang="bg">Готов филм до 90 дни, включено в цената.</span><span lang="en">Finished film within 90 days, included.</span></p>
           </li>
         </ol>
@@ -107,41 +122,45 @@
     </div>
   </section>
 
-  <section class="block" aria-labelledby="about-h">
+  <section class="block" id="about" aria-labelledby="about-h">
     <div class="wrap about">
-      <figure class="portrait">
-        <img src="img/marcin-833.webp" srcset="img/marcin-480.webp 480w, img/marcin-833.webp 833w" sizes="(max-width:860px) 90vw, 40vw" width="833" height="833" loading="lazy"
+      <figure class="arch-tall">
+        <img src="img/marcin-833.webp" srcset="img/marcin-480.webp 480w, img/marcin-833.webp 833w" sizes="(max-width:920px) 360px, 440px" width="833" height="833" loading="lazy"
              alt="Марчин Китовски снима сватба с камера на гимбал / Marcin Kitowski filming a wedding with a gimbal-mounted camera">
       </figure>
       <div>
         <h2 id="about-h"><span lang="bg">Здравейте, аз съм Марчин</span><span lang="en">Hi, I'm Marcin</span></h2>
         <p><span lang="bg">Чужденецът от името и сватбен видеограф. Вярвам, че всеки сватбен ден е уникална история, изпълнена с емоции, красота и незабравими моменти. Моята работа е да уловя тези мигове и да ги превърна във филм, който ще ви връща към този ден отново и отново.</span><span lang="en">The foreigner in the name, and a wedding videographer. I believe every wedding day is its own story, full of emotion, beauty and moments you will want to keep. My job is to catch those moments and turn them into a film that takes you back to that day again and again.</span></p>
         <p><span lang="bg">Снимам автентично и кинематографично. Работя с модерно оборудване и внимавам за всеки детайл, за да запазя естествените емоции и атмосферата на вашия празник.</span><span lang="en">I film in an honest, cinematic way. I work with modern equipment and pay attention to every detail, so the real emotions and the mood of your celebration stay in the film.</span></p>
+        <a class="btn btn-ghost" href="https://www.youtube.com/@%D0%A7%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B5%D1%86%D1%8A%D1%82%D1%81%D0%BD%D0%B8%D0%BC%D0%B0" target="_blank" rel="noopener"><span lang="bg">Гледайте филмите в YouTube</span><span lang="en">Watch the films on YouTube</span></a>
       </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <h2 id="contact-h"><span lang="bg">Свържете се с мен</span><span lang="en">Get in touch</span></h2>
+      <p class="lead"><span lang="bg">Обадете се или пишете, за да проверим дали датата ви е свободна.</span><span lang="en">Call or write to check whether your date is free.</span></p>
+      <div class="actions">
+        <a class="btn btn-rose" href="tel:+359877392429"><span lang="bg">Обадете се: 087 739 2429</span><span lang="en">Call +359 87 739 2429</span></a>
+        <a class="btn btn-ghost" href="mailto:chujdenecatsnima@gmail.com">chujdenecatsnima@gmail.com</a>
+      </div>
+      <dl class="roll">
+        <dt><span lang="bg">Режисьор и оператор</span><span lang="en">Director and camera</span></dt>
+        <dd><span lang="bg">Марчин Китовски</span><span lang="en">Marcin Kitowski</span></dd>
+        <dt><span lang="bg">Филми</span><span lang="en">Films</span></dt>
+        <dd><a href="https://www.youtube.com/@%D0%A7%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B5%D1%86%D1%8A%D1%82%D1%81%D0%BD%D0%B8%D0%BC%D0%B0" target="_blank" rel="noopener">YouTube</a></dd>
+        <dt><span lang="bg">Новини</span><span lang="en">News</span></dt>
+        <dd><a href="https://www.facebook.com/p/%D0%A7%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B5%D1%86%D1%8A%D1%82-%D1%81%D0%BD%D0%B8%D0%BC%D0%B0-61565120180688/" target="_blank" rel="noopener">Facebook</a></dd>
+      </dl>
+      <p class="fin"><span lang="bg">Ще се радвам да бъда част от вашия ден.</span><span lang="en">I would be glad to be part of your day.</span></p>
     </div>
   </section>
 
 </main>
 
-<footer class="credits on-black" id="contact" aria-labelledby="contact-h">
-  <div class="wrap">
-    <h2 id="contact-h"><span lang="bg">Свържете се с мен</span><span lang="en">Get in touch</span></h2>
-    <p class="lead"><span lang="bg">Обадете се или пишете, за да проверим дали датата ви е свободна.</span><span lang="en">Call or write to check whether your date is free.</span></p>
-    <dl class="roll">
-      <dt><span lang="bg">Режисьор и оператор</span><span lang="en">Director and camera</span></dt>
-      <dd><span lang="bg">Марчин Китовски</span><span lang="en">Marcin Kitowski</span></dd>
-      <dt><span lang="bg">Телефон</span><span lang="en">Phone</span></dt>
-      <dd><a href="tel:+359877392429"><span lang="bg">087 739 2429</span><span lang="en">+359 87 739 2429</span></a></dd>
-      <dt><span lang="bg">Имейл</span><span lang="en">Email</span></dt>
-      <dd><a href="mailto:chujdenecatsnima@gmail.com">chujdenecatsnima@gmail.com</a></dd>
-      <dt><span lang="bg">Филми</span><span lang="en">Films</span></dt>
-      <dd><a href="https://www.youtube.com/@%D0%A7%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B5%D1%86%D1%8A%D1%82%D1%81%D0%BD%D0%B8%D0%BC%D0%B0" target="_blank" rel="noopener">YouTube</a></dd>
-      <dt><span lang="bg">Новини</span><span lang="en">News</span></dt>
-      <dd><a href="https://www.facebook.com/p/%D0%A7%D1%83%D0%B6%D0%B4%D0%B5%D0%BD%D0%B5%D1%86%D1%8A%D1%82-%D1%81%D0%BD%D0%B8%D0%BC%D0%B0-61565120180688/" target="_blank" rel="noopener">Facebook</a></dd>
-    </dl>
-    <p class="fin"><span lang="bg">Ще се радвам да бъда част от вашия ден.</span><span lang="en">I would be glad to be part of your day.</span></p>
-    <p class="colophon">© 2026 <span lang="bg">Чужденецът снима</span><span lang="en">Чужденецът снима (The Foreigner Films)</span></p>
-  </div>
+<footer class="foot">
+  <p>© 2026 Чужденецът снима</p>
 </footer>
 
 <script src="js/main.js"></script>
