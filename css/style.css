@@ -42,6 +42,11 @@ html.l-bg body [lang="en"], html.l-en body [lang="bg"]{display:none !important}
 .menu .ext{width:.7rem;height:.7rem;opacity:.7}
 .menu a.menu-cta{background:var(--rose);color:#fff;margin-left:.4rem;padding:.7rem 1.15rem}
 .menu a.menu-cta:hover{background:var(--rose-dark)}
+.social{display:flex;align-items:center;gap:.1rem;margin-left:.6rem;padding-left:.6rem;border-left:1px solid var(--line)}
+.menu .social a{padding:.55rem;border-radius:50%;color:var(--ink)}
+.social svg{width:22px;height:22px;display:block}
+.menu .social a.social-yt:hover{color:#FF0000;background:var(--peach)}
+.menu .social a.social-fb:hover{color:#1877F2;background:var(--peach)}
 
 .flags{display:flex;gap:.35rem}
 .flags button{background:none;border:0;padding:3px;border-radius:50%;cursor:pointer;line-height:0;opacity:.55;transition:opacity .15s}
@@ -144,6 +149,11 @@ ul.rings.get li{font:400 1.2rem/1.45 var(--serif)}
   .menu.open{display:flex}
   .menu a{padding:1rem .5rem;border-radius:12px;font-size:1.15rem}
   .menu a.menu-cta{margin:.6rem 0 0;justify-content:center}
+  .social{margin:1rem 0 0;padding:0;border:0;justify-content:center;gap:1rem}
+  .menu .social a{padding:.7rem;border-radius:50%;background:var(--peach)}
+  .social svg{width:26px;height:26px}
+  .menu .social a.social-yt{color:#FF0000}
+  .menu .social a.social-fb{color:#1877F2}
   .panel{grid-template-columns:1fr}
   .about{grid-template-columns:1fr}
   .arch-tall{max-width:360px;margin:0 auto}
