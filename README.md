@@ -2,7 +2,7 @@
 
 Business-card website for **Чужденецът снима** (The Foreigner Films), wedding videography by Marcin Kitowski in Bulgaria. Bulgarian and English on one page.
 
-Live: https://chuzhdenetsatsnima.com/
+Live: https://kitek-beta.vercel.app/ (target domain: chuzhdenetsatsnima.com; when it moves, update the URLs in the <head> of index.html)
 
 ## Structure
 
